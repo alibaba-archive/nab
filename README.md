@@ -1,5 +1,11 @@
 # nab, node version `ab` benchmark tools.
 
+## Install
+
+```bash
+$ sudo npm install nab -g
+```
+
 ## Usage
 
 ```bash
