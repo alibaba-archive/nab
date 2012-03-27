@@ -1,4 +1,4 @@
 {
   "sql": "SELECT * FROM hbase.tcif WHERE row = :r;",
-  "data": { "r": "24504473" }
+  "data": { "r": "320" }
 }
