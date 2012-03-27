@@ -42,13 +42,19 @@ program
 
 program.parse(process.argv);
 
-
+program.name = 'nab';
 program.url = program.args[0];
+
+if (!program.url) {
+  console.log('url required.');
+  process.exit(-1);
+}
+
 var benchmark = bench.createBenchmark(program);
 benchmark.on('finish', function(results) {
   console.log(results);
+  process.exit(0);
 });
-
 benchmark.run();
 
 

@@ -6,6 +6,7 @@
   "author": "fengmk2 <fengmk2@gmail.com> (http://github.com/fengmk2)",
   "homepage": "http://github.com/fengmk2/nab",
   "main": "index.js",
+  "bin": { "nab": "./cli.js" },
   "repository": {
     "type": "git",
     "url": "git://github.com/fengmk2/nab.git"
