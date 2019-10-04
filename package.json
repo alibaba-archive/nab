@@ -2,29 +2,37 @@
   "name": "nab",
   "version": "0.0.1",
   "description": "Node version ab.",
-  "keywords": [ "benchmark" ],
+  "keywords": [
+    "benchmark"
+  ],
   "author": "fengmk2 <fengmk2@gmail.com> (http://github.com/fengmk2)",
   "homepage": "http://github.com/fengmk2/nab",
   "main": "index.js",
-  "bin": { "nab": "./cli.js" },
+  "bin": {
+    "nab": "./cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/fengmk2/nab.git"
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "commander": ">=0.5.2",
     "progress": ">=0.0.4",
-    "urllib": ">=0.2.3"
+    "urllib": ">=0.2.3",
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "should": ">=0.4.2",
     "mocha": ">=0.13.0"
   },
   "license": "MIT",
-  "engines": { 
-    "node": ">= 0.6.8" 
-  }
+  "engines": {
+    "node": ">= 0.6.8"
+  },
+  "snyk": true
 }
